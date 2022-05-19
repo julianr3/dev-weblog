@@ -1,0 +1,100 @@
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    padding: 3% 4% 0% 4%;
+    background-color: darkblue;
+    color: aqua;
+}
+
+.hero p {
+    max-width: 75%;
+}
+
+.app-title {
+    font-size: 3rem;
+    background-color: darkblue;
+    color: aqua;
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: var(--border-radius);
+    box-shadow: 6px 5px var(--light-dark);
+}
+
+.foot {
+    background-color: darkblue;
+    color: aqua;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.content {
+    background-color: lightskyblue;
+    padding-bottom: 1px;
+}
+
+.nav a {
+    color: orangered;
+    padding: 0px 5px;
+}
+
+.welcome {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.intro {
+    background-color: darkblue;
+    color: lightskyblue;
+    font-size: 2rem;
+    padding-left: 25px;
+}
+
+h1.postTitle {
+    background-color: slateblue;
+    color: cornsilk;
+    border-radius: 5px;
+    padding: 15px 0px 15px 50px;
+    text-align: center;
+    font-weight: 900;
+}
+
+p {
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.btn.btn-primary.mb-2 {
+    margin-top: 0.5rem;
+}
+
+button.btn.btn-primary {
+    margin-bottom: 16px;
+}
+
+a.btn.btn-success {
+    margin: 0 0 16px 10px;
+}
+
+p.brief {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.dashComment {
+    background-color: lightskyblue;
+    color: orangered;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+}
+
+.createP {
+    padding: 20px 0px;
+}

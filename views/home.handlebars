@@ -1,12 +1,15 @@
-<div>
-    <h1>This is the Homepage</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam explicabo iusto expedita error voluptatem sapiente
-        iure porro nesciunt! Provident animi blanditiis consectetur esse nostrum, quisquam officiis similique rerum
-        exercitationem numquam.</p>
+<div class="content">
+    <div class="welcome">
+        <div class="intro">Welcome to the community!</div>
+        <p class="brief">Please feel free to add and post content with other users! We welcome everyone as this is a melting pot for developers! 
+        Have fun and enjoy!
+        </p>
+    </div>
+
 
     {{#each allPosts }}
         <hr/>
-             <h1>{{title}}</h1>
+             <h1 class="postTitle">{{title}}</h1>
              <p>{{content}}</p>
     {{/each}}
 
