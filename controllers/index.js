@@ -19,7 +19,8 @@ router.get('/', (req, res) => {
         console.log(allPosts)
 
         res.render("home", {
-            allPosts
+            allPosts, 
+            loggedIn:req.session.logged_in
         })
     })
 
@@ -27,7 +28,22 @@ router.get('/', (req, res) => {
 })
 
 router.get('/signup', (req, res) => {
-    res.render("signup")
+    res.render("signup", {
+        loggedIn:req.session.logged_in
+    })
 })
+
+router.get('/dashboard', (req, res) => {
+    res.render("dashboard", {
+        loggedIn:req.session.logged_in
+    })
+})
+
+router.get('/login', (req, res) => {
+    res.render("login", {
+        loggedIn:req.session.logged_in
+    })
+})
+
 
 module.exports = router;

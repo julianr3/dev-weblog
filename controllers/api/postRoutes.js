@@ -22,7 +22,7 @@ router.delete('/:id', async (req, res) => {
     const postData = await Post.destroy({
       where: {
         id: req.params.id,
-        user_id: req.session.user_id,
+        // user_id: req.session.user_id,
       },
     });
 
