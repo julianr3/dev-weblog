@@ -1,0 +1,19 @@
+<div class="content">
+    <p id="postId">{{username}}</p>
+            <h1 class="postTitle">{{title}}</h1>
+             <p>{{content}}</p>
+             {{!-- <p>{{username}}</p> --}}
+</div>
+
+<textarea class="form-control" id="inputContext" rows="10"
+            placeholder="Please type your comments here...">
+</textarea>
+<button type="button" button id="submitBtn" class="btn btn-primary mb-2">Submit!</button>
+
+{{#each allComments }}
+        <hr/>
+             <h1 class="postTitle">{{username}}</h1>
+             <p>{{content}}</p>
+{{/each}}
+
+<script src="/assets/js/comment.js"></script>

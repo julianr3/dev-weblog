@@ -1,7 +1,36 @@
 <div class="dashComment">
     <div class="form-group">
         <label for="exampleFormControlTextarea1" class="createP">CREATE A POST</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="mb-3">
+            <input type="title" class="form-control" id="inputTitle" aria-describedby="titleHelp"
+                placeholder="Enter Title here...">
+        </div>
+        <textarea class="form-control" id="inputContext" rows="10"
+            placeholder="Please type your comments here..."></textarea>
     </div>
-    <button type="submit" class="btn btn-primary mb-2">Submit!</button>
+    <button type="button" button id="submitBtn" class="btn btn-primary mb-2">Submit!</button>
 </div>
+
+    {{#each allPosts }}
+        <hr/>
+             <h1 class="postTitle">{{title}}</h1>
+             <p>{{content}}</p>
+    {{/each}}
+
+
+<script src="/assets/js/dashboard.js"></script>
+
+
+
+{{!-- <div class="container">
+    <form id="commentForm">
+        <div class="mb-3">
+            <input type="title" class="form-control" id="inputTitle" aria-describedby="titleHelp"
+                placeholder="Enter Title here...">
+        </div>
+        <textarea class="form-control" id="inputContext" rows="10"
+            placeholder="Please type your comments here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submitr</button>
+    </form>
+</div> --}}
